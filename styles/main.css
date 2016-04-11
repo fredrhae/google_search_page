@@ -1,0 +1,259 @@
+/* ############ General style elements  ###########*/
+html {
+  overflow-y: scroll;
+}
+
+div{
+	display: block;
+}
+
+li {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+a{
+	text-decoration:none;
+	font-family: Arial, sans-serif;
+	font-size: 14px;
+}
+
+
+.google_search_results{
+	width: 100%; height: 100%;
+	margin: 0;
+}
+
+/* ############ Style elements from the navbar  ###########*/
+
+.navbar{
+	width: 100%; height: 60px;
+	position: absolute;
+	top:0; left:0;
+	background-color: rgb(241, 241, 241);
+}
+
+.link_navbar:hover, .link_footer:hover{
+	color: rgb(51,51,56);
+}
+
+.link_navbar{
+	position:relative;
+	margin-left: 12px;
+	bottom: 8px;
+	color: rgb(63,87,95);
+}
+
+.profile_options{
+	position:absolute;
+	top: 15px;
+	right: 20px;
+}
+
+#logo{
+	width: 99px; height: 34px;
+	position:absolute;
+    vertical-align: middle;
+	top: 15px;
+	left: 15px;
+}
+
+#img_profile, #img_notifications, #img_applications{
+	position:relative;
+	bottom: 6px;
+	margin-left: 12px;
+}
+#img_profile{
+	width: 32px; height: 32px;
+	border-radius: 100%;
+}
+
+#img_notifications{
+	width: 23px; height: 23px;
+	border-radius: 100%;
+}
+
+#img_applications{
+	width: 17px; height: 17px;
+}
+
+.search_form{
+	position: absolute;
+	top: 12px;
+	left: 130px;
+	width: 500px;
+	height:38px;
+	background-color: white;
+	border: 1px solid rgb(217,217,217);
+}
+
+.search_form:hover{
+	border: 1px solid rgb(77,144,254);
+}
+
+.search_query{
+	border: none
+	position: relative;
+	width: 100%;
+	height: 25px;
+	vertical-align: center;
+}
+
+#search_query_input{
+	background-color: transparent;
+	width: 80%;
+	height: 20px;
+	position: relative;
+	display:inline;
+	top: 8px;
+	left: 4px;
+	border: none;
+}
+
+#mic, #keyboard, #search_button{
+	vertical-align: center;
+	display: inline-block;
+	float:right;
+	
+}
+
+#mic{
+	width: 18px; height: 25px;
+	position: relative;
+	top: 5px;
+	right: 0px;
+}
+
+#keyboard{
+	width: 21px; height: 12px;
+	position: relative;
+	top: 13px;
+	left: -50px;
+}
+
+#search_button{
+	position: relative;
+	border: 1px solid rgb(66,133,244);
+	background-color: rgb(66,133,244);
+	background-image: url(../images/search.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 40px;
+	width: 	40px;
+	top: -1px;
+	right: -70px;
+}
+
+#search_button:hover{
+	background-color: rgb(59,120,231);
+	border: 1px solid rgb(59,120,231);
+	background-image: url(../images/search_hover.png);
+}
+
+/* ############ Style elements from the results with the content  ###########*/
+
+.content{
+	background-color: white;
+	position: absolute;
+	top: 60px;
+	width: 100%; height: 75%;
+}
+
+.search_options{
+	position:absolute;
+	top: 20px;
+	left: 120px;
+}
+
+.search_options_navbar{
+	width: 100%; height: 60px;
+	position: absolute;
+	background-color: white;
+	border: 1px solid rgb(235,235,235);
+}
+
+.link_search_options{
+	position:relative;
+}
+
+.search_option{
+	font-family: Arial, sans-serif;
+	font-size: 14px;
+	color: rgb(119,119,123);
+}
+
+.search_option:hover{
+	color: rgb(34,40,54);
+}
+
+.search_options a{
+	padding: 19px 10px;
+}
+
+#active{
+	color: rgb(66, 133, 244);
+	font-weight: bold;
+	border-bottom: 3px solid rgb(66, 133, 244);
+}
+
+#search_tools{
+	border: none;
+	background-color: transparent;
+	font-family: Arial, sans-serif;
+	font-size: 14px;
+	color: rgb(119,119,119);
+	width: 180px; height:28px;
+}
+
+#search_tools:hover{
+	border: 1px solid rgb(198,198,198);
+	background-color: rgb(246, 246, 246);
+	font-family: Arial, sans-serif;
+	border-radius: 2px;
+	font-size: 14px;
+	cursor: pointer;
+}
+
+/* ############ Style elements from the footer   ###########*/
+
+.footer{
+	width: 100%; height: 65px;
+	position: absolute;
+	bottom: 0px;
+	background-color: rgb(242,242,242);
+	border: 1px solid rgb(228,228,228);
+}
+
+#circle {
+	display: inline-block;
+    width: 9px;
+    height: 9px;
+    -webkit-border-radius: 4.5px;
+    -moz-border-radius: 4.5px;
+    border-radius: 4.5px;
+    background: rgb(158, 158, 158);
+}
+
+#localization{
+	display:inline;
+	margin-left: 2px;
+	text-decoration:none;
+	font-family: Arial, sans-serif;
+	font-size: 14px;
+	color: rgb(170,170,170);
+}
+	
+.footer_options{
+	float:left;
+	margin-left: 120px;
+	margin-top: 10px;
+}
+
+.footer_options ul li {
+	margin-right: 14px;
+}
+
+.link_footer{
+	position:relative;
+	color: rgb(102,102,102);
+}
