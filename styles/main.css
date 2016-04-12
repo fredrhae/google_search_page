@@ -33,7 +33,7 @@ p {
 
 .navbar{
 	width: 100%; height: 60px;
-	position: absolute;
+	position: relative;
 	top:0; left:0;
 	background-color: rgb(241, 241, 241);
 }
@@ -159,20 +159,20 @@ p {
 
 .content{
 	background-color: white;
-	position: absolute;
-	top: 60px;
+	position: relative;
+	top: 0px;
 	width: 100%; height: 75%;
 }
 
 .search_options{
-	position:absolute;
+	position:relative;
 	top: 18px;
 	left: 120px;
 }
 
 .search_options_navbar{
 	width: 100%; height: 60px;
-	position: absolute;
+	position: relative;
 	background-color: white;
 	border: 1px solid rgb(235,235,235);
 }
@@ -182,7 +182,6 @@ p {
 	padding-left:120px;
 	background: white;
 	position: relative;
-	top: 62px;
 }
 
 .link_search_options{
@@ -245,8 +244,8 @@ p {
 .button_options{
 	position:relative;
 	float:right;
-	top: 16px;
 	right: 40px;
+	top: -10px;
 }
 
 #settings{
@@ -274,6 +273,8 @@ p {
 	background-color: rgb(246, 246, 246);
 }
 
+/* ############# Style for search results elements ######## */
+
 .search_results > span{
 	font-family: Arial, sans-serif;
 	font-size: 14px;
@@ -285,7 +286,7 @@ p {
 
 .search_result_link {
 	position:relative;
-	top: 40px;
+	top: 20px;
 	left: 8px;
 }
 
@@ -312,13 +313,92 @@ p {
 	font-size: 13px;
 	color: rgb(84,84,89);
 }
+/* ############ Style with related searches content #######*/
+.related_searches{
+	background-color: white;
+	position: relative;
+	top: 25px;
+	width: 100%; height: 10%;
+}
+.related_searches > div{
+	width: 40%; height: 170px;
+	margin-left: 120px; 
+	border-top: 1px solid rgb(238,238,238);
+	border-bottom: 1px solid rgb(238,238,238);
+}
+
+.related_searches > div > p {
+	font-family: Arial, sans-serif;
+	font-size: 18px;
+	color: rgb(128,128,128);
+}
+
+.related_searches a {
+	color: rgb(26, 13, 171);
+	font-weight: bold;
+	font-family: Arial, sans-serif;
+	font-size: 13.5px;
+}
+
+.related_searches a:hover {
+	text-decoration: underline;
+}
+
+.related_searches ul > li > ul{
+	margin-right: 20px;
+}
+
+.related_searches ul > li > ul > li{
+	display: block;
+	margin-top: 8px;
+}
+
+/* ########### Style elements with the different result searches ###### */
+.result_pages{
+	background-color: transparent;
+	position: relative;
+	top: 50px;
+	width: 100%; height: 10%;
+}
+
+.result_pages img, .result_pages ul{
+	margin-left: 220px;
+}
+
+.result_pages a {
+	color: rgb(66, 133, 244);
+}
+
+.result_pages a:hover{
+	text-decoration: underline;
+}
+
+#selected_page{
+	color: black;
+}
+
+#selected_page:hover{
+	text-decoration:none;
+}
+
+.result_pages > ul > li:first-child{
+	margin-left: 40px;
+}
+ .result_pages > ul > li:last-child{
+	margin-left: 60px;
+ }
+
+.result_pages > ul > li {
+	display: inline;
+	margin-left: 10px;
+}
 
 /* ############ Style elements from the footer   ###########*/
 
 .footer{
 	width: 100%; height: 65px;
-	position: absolute;
-	top: 1400px;
+	position: relative;
+	top: 80px;
 	background-color: rgb(242,242,242);
 	border: 1px solid rgb(228,228,228);
 }
